@@ -4063,3 +4063,32 @@ body.is-preload #sidebar nav ul li {
 		flex-direction: column;
 	}
 }
+
+#status {}
+
+#status.success {
+	color: rgb(200, 250, 153);
+	animation: status 4s ease forwards;
+}
+
+#status.error {
+	color: red;
+	animation: status 4s ease forwards;
+}
+
+@keyframes status {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	100% {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
